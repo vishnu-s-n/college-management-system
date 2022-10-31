@@ -1,0 +1,41 @@
+{% extends 'main_app/base.html' %}
+{% load static %}
+{% block page_title %}{{page_title}}{% endblock page_title %}
+
+{% block content %}
+
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- general form elements -->
+                <div class="card card-primary">    
+                    
+                   
+                </div>
+                <!-- /.card -->
+<div class="card card-primary">
+    <div class="card-header"><h3 class="card-title">{{page_title}}</h3></div>
+   <div class="table">
+    
+
+       <table class="table table-bordered">
+    
+        <p align="center"><a href="{% url 'student_video_view' %}" class="site-btn sb-gradient"><h3>VIDEOS</a></h3>
+        
+        
+
+            {% for i in data %}
+            <div class="classes-item">
+                <video style="height:40%; width:60%;" controls>
+                    <source src='{{ i.videofile.url }}' type='video/mp4'>
+                    </div>
+                    </div>
+                  </div>
+                  </video>
+                
+            {% endfor %}
+
+        
+</section>
+{% endblock content %}

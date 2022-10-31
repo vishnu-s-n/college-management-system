@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+<title>Course - TEACHERS</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Course Project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="static/styles/bootstrap4/bootstrap.min.css">
+<link href="static/plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="static/styles/teachers_styles.css">
+<link rel="stylesheet" type="text/css" href="static/styles/teachers_responsive.css">
+</head>
+<body>
+
+<div class="super_container">
+
+	<!-- Header -->
+
+	<header class="header d-flex flex-row">
+		<div class="header_content d-flex flex-row align-items-center">
+			<!-- Logo -->
+			<div class="logo_container">
+				<div class="logo">
+					<img src="https://st.depositphotos.com/1378583/4783/v/450/depositphotos_47839553-stock-illustration-bright-education-logo.jpg" alt=""width="95"height="">
+					<span>scholar</span>
+				</div>
+			</div>
+
+			<!-- Main Navigation -->
+			<nav class="main_nav_container">
+				
+				<div class="main_nav">
+					<ul class="main_nav_list">
+						
+						<li class="main_nav_item"><a href="{% url 'home' %}">home</a></li>
+						<li class="main_nav_item"><a href="{% url 'a' %}">about us</a></li>
+						<li class="main_nav_item"><a href="{% url 'c' %}">Course</a></li>
+						<li class="main_nav_item"><a href="{% url 'n' %}">News</a></li>
+						<li class="main_nav_item"><a href="{% url 'co' %}">Contact</a></li>
+						<li class="main_nav_item">
+						<div class="dropdown">
+							<button style="background-color: orange; color: black; font-size: small; font-weight: bold;" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">SIGNIN
+							</button>
+							<ul class="dropdown-menu">
+							  <li><a href="{% url 'login_page' %}"> Student Portal</a></li>
+							  <li><a href="{% url 'login_page' %}"> Staff Portal</a></li>
+							  <li><a href="{% url 'login_page' %}"> Admins</a></li>
+							</ul>
+						  </div>
+						</li>
+					</ul>
+				
+		
+						
+					
+				</div>
+			</nav>
+		
+		</div>
+
+		<div class="header_side d-flex flex-row justify-content-center align-items-center">
+			<img src="static/images/phone-call.svg" alt="">
+			<span>8075386391</span>
+		</div>
+		<!-- Hamburger -->
+		<div class="hamburger_container">
+			<i class="fas fa-bars trans_200"></i>
+		</div>
+
+	</header>
+	
+	<!-- Menu -->
+	<div class="menu_container menu_mm">
+
+		<!-- Menu Close Button -->
+		<div class="menu_close_container">
+			<div class="menu_close"></div>
+		</div>
+
+		<!-- Menu Items -->
+		<div class="menu_inner menu_mm">
+			<div class="menu menu_mm">
+				<ul class="menu_list menu_mm">
+					<li class="menu_item menu_mm"><a href="index.html">Home</a></li>
+					<li class="menu_item menu_mm"><a href="about.html">About us</a></li>
+					<li class="menu_item menu_mm"><a href="courses.html">Courses</a></li>
+					<li class="menu_item menu_mm"><a href="elements.html">Elements</a></li>
+					<li class="menu_item menu_mm"><a href="news.html">News</a></li>
+					<li class="menu_item menu_mm"><a href="contact.html">Contact</a></li>
+				</ul>
+
+				<!-- Menu Social -->
+				
+				<div class="menu_social_container menu_mm">
+					<ul class="menu_social menu_mm">
+						<li class="menu_social_item menu_mm"><a href="#"><i class="fab fa-pinterest"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="#"><i class="fab fa-instagram"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="#"><i class="fab fa-twitter"></i></a></li>
+					</ul>
+				</div>
+
+				<div class="menu_copyright menu_mm">Colorlib All rights reserved</div>
+			</div>
+
+		</div>
+
+	</div>
+	
+	<!-- Home -->
+
+	<div class="home">
+		<div class="home_background_container prlx_parent">
+			<div class="home_background prlx" style="background-image:url(static/images/teachers_background.jpg)"></div>
+		</div>
+		<div class="home_content">
+			<h1>About Us</h1>
+		</div>
+	</div>
+	<br>
+	<br>
+<h1><b>ABOUT COLLEGE</b></h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eos quidem quae totam molestias ad culpa, laboriosam dolore possimus. Fugiat beatae voluptates, culpa nesciunt voluptatum sapiente consequatur veritatis magni exercitationem! .</p>
+
+<h3>Mission</h3>
+	<p>
+		Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem ratione, impedit natus sint neque voluptate vitae debitis eveniet, recusandae alias quia et expedita? Quia deserunt, accusantium fugit eos consequatur consectetur.
+	
+	</p>
+	<h3>Vission</h3>
+		<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam voluptas quidem quam reiciendis consequuntur porro aut possimus qui animi in? Dolores asperiores molestias culpa debitis consequatur alias consequuntur reprehenderit neque..</p>
+	
+	
+
+
+		
+		<!-- Milestones -->
+		
+		<div class="milestones">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						
+					</div>
+				</div>
+			</div>
+
+			<div class="milestones_container">
+				<div class="milestones_background" style="background-image:url(static/images/milestones_background.jpg)"></div>
+				
+				<div class="container">
+					<div class="row">
+						
+						<!-- Milestone -->
+						<div class="col-lg-3 milestone_col">
+							<div class="milestone text-center">
+								<div class="milestone_icon"><img src="static/images/milestone_1.svg" alt="https://www.flaticon.com/authors/zlatko-najdenovski"></div>
+								<div class="milestone_counter" data-end-value="1050">0</div>
+								<div class="milestone_text">Current Students</div>
+							</div>
+						</div>
+
+						<!-- Milestone -->
+						<div class="col-lg-3 milestone_col">
+							<div class="milestone text-center">
+								<div class="milestone_icon"><img src="static/images/milestone_2.svg" alt="https://www.flaticon.com/authors/zlatko-najdenovski"></div>
+								<div class="milestone_counter" data-end-value="120">0</div>
+								<div class="milestone_text">Certified Teachers</div>
+							</div>
+						</div>
+
+						<!-- Milestone -->
+						<div class="col-lg-3 milestone_col">
+							<div class="milestone text-center">
+								<div class="milestone_icon"><img src="static/images/milestone_3.svg" alt="https://www.flaticon.com/authors/zlatko-najdenovski"></div>
+								<div class="milestone_counter" data-end-value="39">0</div>
+								<div class="milestone_text">Approved Courses</div>
+							</div>
+						</div>
+
+						<!-- Milestone -->
+						<div class="col-lg-3 milestone_col">
+							<div class="milestone text-center">
+								<div class="milestone_icon"><img src="static/images/milestone_4.svg" alt="https://www.flaticon.com/authors/zlatko-najdenovski"></div>
+								<div class="milestone_counter" data-end-value="5000" data-sign-before="+">0</div>
+								<div class="milestone_text">Graduate Students</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	
+
+	<!-- Footer -->
+
+	<footer class="footer">
+		<div class="container">
+			
+			<!-- Footer Copyright -->
+
+			<div class="footer_bar d-flex flex-column flex-sm-row align-items-center">
+				<div class="footer_copyright">
+					<span>Colorlib All rights reserved</span>
+				</div>
+				<div class="footer_social ml-sm-auto">
+					<ul class="menu_social">
+						<li class="menu_social_item"><a href="#"><i class="fab fa-pinterest"></i></a></li>
+						<li class="menu_social_item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+						<li class="menu_social_item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+						<li class="menu_social_item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+						<li class="menu_social_item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+
+</div>
+
+<script src="static/js/jquery-3.2.1.min.js"></script>
+<script src="static/styles/bootstrap4/popper.js"></script>
+<script src="static/styles/bootstrap4/bootstrap.min.js"></script>
+<script src="static/plugins/greensock/TweenMax.min.js"></script>
+<script src="static/plugins/greensock/TimelineMax.min.js"></script>
+<script src="static/plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="static/plugins/greensock/animation.gsap.min.js"></script>
+<script src="static/plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="static/plugins/progressbar/progressbar.min.js"></script>
+<script src="static/plugins/scrollTo/jquery.scrollTo.min.js"></script>
+<script src="static/plugins/easing/easing.js"></script>
+<script src="static/js/elements_custom.js"></script>
+
+</body>
+</html>

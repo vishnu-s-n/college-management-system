@@ -1,0 +1,60 @@
+{% extends 'main_app/base.html' %}
+{% load static %}
+{% block page_title %}{{page_title}}{% endblock page_title %}
+{% block content %}
+
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- general form elements -->
+                <div class="card card-primary">
+                    <div class="card-header">
+                        <h3 class="card-title">{{page_title}}</h3>
+                    </div>
+
+		<table style="width:30%">
+		<h2><center>VIDEOS</center></h2>
+          <!-- /.card-header -->
+          <div class="card-body">
+            <table id="example2" class="table table-bordered table-hover">
+                <thead>
+<tr style="height:30%">
+    <th>ID</th>
+    <th><b>Name</b></th>
+    <th><b>Video</b></th>
+    <th><b>Delete</b></th>
+  </tr>
+  {% for i in data %}
+  <tr>
+      <td>
+          {{i.id}}
+      </td> 
+    <td>
+        {{i.name}}
+    </td> 
+ 
+        <td>
+            <video style="height: 30%; width:20%;" controls>
+            <source src='{{ i.videofile.url }}' type='video/mp4'>
+    </td>
+    <td>
+        <div class="card-footer">
+                        <button type="button" id='fetch_student'>
+        <a href="{% url 'dl' userid=i.id %}">Delete</a></button></div>
+    </td>
+
+    </div>
+        
+    </td>
+  </tr>
+  
+  {% endfor %}
+  </center>
+</table>
+</body>
+</html>
+
+                  
+                              
+{% endblock content %}
